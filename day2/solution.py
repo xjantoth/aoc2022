@@ -4,7 +4,8 @@
 # Scissors defeats Paper
 # Paper defeats Rock.
 
-import argparse, pathlib
+import argparse
+import pathlib
 
 parser = argparse.ArgumentParser()
 parser.add_argument('file', type=pathlib.Path)
