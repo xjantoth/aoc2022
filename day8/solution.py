@@ -37,6 +37,7 @@ for line in data:
         l = []
         u = []
         for _e in right:
+            # eliminate boarders
             if ((idx_hh or idx_vv) in [0, len(line)-1]):
                 break
             if _e < i[1]: # does not work when [5] (4,9) 
@@ -47,6 +48,7 @@ for line in data:
         #time.sleep(1)
 
         for _e in left[::-1]:
+            # eliminate boarders
             if ((idx_hh or idx_vv) in [0, len(line)-1]):
                 break
             if _e < i[1]:
@@ -56,6 +58,7 @@ for line in data:
                 break
         #time.sleep(1)
         for _e in _right:
+            # eliminate boarders
             if ((idx_hh or idx_vv) in [0, len(line)-1]):
                 break
             if _e < i[1]:
@@ -66,6 +69,7 @@ for line in data:
         #time.sleep(1)
 
         for _e in _left[::-1]:
+            # eliminate boarders
             if ((idx_hh or idx_vv) in [0, len(line)-1]):
                 break
             if _e < i[1]:
